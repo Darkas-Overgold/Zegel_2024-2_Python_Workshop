@@ -32,17 +32,17 @@ Welcome to the **Zegel 2024-2 Python Workshop** repository! This repository is d
    ```
    git clone https://github.com/Darkas-Overgold/Zegel_2024-2_Python_Workshop.git
    cd Zegel_2024-2_Python_Workshop
-Install Python: Ensure you have Python 3.8 or higher installed on your system.
+2. **Install Python:** Ensure you have Python 3.8 or higher installed on your system.
 Download Python here.
 
-Set Up Virtual Environment (Optional):
+3. **Set Up Virtual Environment (Optional):**
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-Install Required Packages: If there are dependencies, install them with:
+4. **Install Required Packages:** If there are dependencies, install them with:
 ```
 pip install -r requirements.txt
 ```
-Explore and Learn: Navigate through the folders, pick an exercise or project, and start coding!
+5. **Explore and Learn:** Navigate through the folders, pick an exercise or project, and start coding!
 
 
 📚 Topics Covered
