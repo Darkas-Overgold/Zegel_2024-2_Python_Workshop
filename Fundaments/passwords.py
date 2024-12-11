@@ -1,4 +1,3 @@
-# Fundamentos de programación
 import random
 import string
 
@@ -13,16 +12,20 @@ def generate_password():
 
     while True:
         # Solicitar al usuario la longitud de la contraseña
-        length = input("Digita la longitud de tu contraseña (mínimo 8): ")
-
-        if length.isdigit():  # Verificar si la entrada es un número
+        try:
+            length = input("Digita la longitud de tu contraseña (mínimo 8): ")
+            
+            if not length.isdigit():  # Verificar si la entrada es un número
+                raise ValueError("Debes ingresar un número válido. Intenta nuevamente.")
+            
             length = int(length)
             if length >= 8:
                 break
             else:
                 print("La longitud debe ser al menos de 8 caracteres. Intenta nuevamente.")
-        else:
-            print("Debes ingresar un número válido. Intenta nuevamente.")
+        
+        except ValueError as e:
+            print(f"Error: {e}")
 
     # Crear una lista de tuplas con el nombre y los caracteres de cada tipo
     char_pool = [(name, chars) for name, chars in char_types.items()]
